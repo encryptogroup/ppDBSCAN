@@ -40,6 +40,10 @@ The [Lsun data file](https://github.com/encryptogroup/ppDBSCAN/blob/main/data/Ls
 ### Clustering other datasets
 To cluster different datasets, the values of ppDBSCAN's 'eps' and 'minPts' as well as the dataset's dimension (indicated by 'dim') should be adapted in this [file](https://github.com/encryptogroup/ppDBSCAN/blob/main/src/examples/ppdbscan/common/ppdbscan_coordination.cpp). Additionally, we recommend to re-use the scripts for clustering Lsun by simply adapting the parameters for the dataset's size and changing the file's address. The dataset size must also be used for the number of grouping iterations (i.e., the number of calls to ppDBSCAN_grouping) as each iteration checks for one element if it creates a cluster including the recursive expansion through potential neighbors. Further, if the new dataset is not given in the same format, the function `loadData(..)` in this [file](https://github.com/encryptogroup/ppDBSCAN/blob/main/src/examples/ppdbscan/common/ppdbscan_coordination.cpp) should be adapted.
 
+
+### Running the grouping phase of ppTRACLUS
+For running the grouping phase of ppTRACLUS, one has to change the distance measure in the function `calculateDistances(..)` from `buildSquaredEuclideanDistCircuit(..)` to `buildApproxTraclusDistanceCircuit(..)` in this [file](https://github.com/encryptogroup/ppDBSCAN/blob/main/src/examples/ppdbscan/common/ppdbscan_coordination.cpp).
+
 ### Issues & Notes
 ABY has a known problem where it randomly returns invalid results in about 1 out of 10 executions. This problem is still an open and also reported in several issues, e.g., [here](https://github.com/MPC-SoK/frameworks/issues/19) or [here](https://github.com/encryptogroup/ABY/issues/114). Given that we have to do many runs of an ABY program in the splitted grouping phase, it follows that our prototype can only give valid runtimes but not valid clustering results. To get valid clustering results, the split of the grouping phase must be removed.
 
