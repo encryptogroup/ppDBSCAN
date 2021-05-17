@@ -1,6 +1,6 @@
 # Privacy-preserving DBSCAN and TRACLUS
 
-By Beyza Bozdemir¹, Sébastien Canard², Orhan Ermis¹, Helen Möllering³, Melek Önen¹, and Thomas Schneider³. (¹[EURECOM](http://www.eurecom.fr); ²[Applied Cryptography Group](https://crypto.orange-labs.fr/), Orange Labs; ³[ENCRYPTO](http://www.encrypto.de), TU Darmstadt) <br>In [16th ACM ASIA Conference on Computer and Communications Security (ACM ASIACCS 2021)](https://asiaccs2021.comp.polyu.edu.hk/). <!--%[Paper available here.](https://encrypto.de/papers/) -->
+By Beyza Bozdemir¹, Sébastien Canard², Orhan Ermis¹, Helen Möllering³, Melek Önen¹, and Thomas Schneider³. (¹[EURECOM](http://www.eurecom.fr); ²[Applied Cryptography Group](https://crypto.orange-labs.fr/), Orange Labs; ³[ENCRYPTO](http://www.encrypto.de), TU Darmstadt) <br>In [16th ACM ASIA Conference on Computer and Communications Security (ACM ASIACCS 2021)](https://asiaccs2021.comp.polyu.edu.hk/). [Paper available here.](https://eprint.iacr.org/2021/612)
 
 This work is based on the [ABY framework](https://github.com/encryptogroup/ABY/) for efficient mixed-protocol secure two-party computation.
 
